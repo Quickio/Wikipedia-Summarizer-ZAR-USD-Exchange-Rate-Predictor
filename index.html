@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wikipedia Summarizer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            padding: 40px;
+            text-align: center;
+        }
+        form {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        input, select, button {
+            margin: 10px;
+            padding: 10px;
+            font-size: 16px;
+            width: 300px;
+        }
+        .error {
+            color: red;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Wikipedia Topic Summarizer</h1>
+    <form method="POST">
+        <input type="text" name="name" placeholder="Enter your name" required><br>
+        <input type="text" name="topic" placeholder="Enter Wikipedia topic" required><br>
+        <select name="filetype" required>
+            <option value="pdf">PDF</option>
+            <option value="docx">DOCX</option>
+        </select><br>
+        <button type="submit">Summarize and Download</button>
+    </form>
+    {% if error %}
+        <div class="error">{{ error }}</div>
+    {% endif %}
+</body>
+</html>
