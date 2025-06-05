@@ -1,43 +1,26 @@
-# Wikipedia-Summarizer-ZAR-USD-Exchange-Rate-Predictor
-Overview
-This project has two main parts:
 
-Wikipedia Summarizer:
+Wikipedia Summarizer
+A simple Flask web app that fetches Wikipedia articles, summarizes them using a transformer model, and lets users download the summary as a PDF or DOCX file.
 
-Fetches the content of a Wikipedia page for a user-provided topic.
+Features
+Search any Wikipedia topic
 
-Summarizes the content using a transformer-based summarization model.
+Get a concise summary powered by Facebook's BART model
 
-Saves the summary as a basic PDF.
+Download summary as PDF or DOCX
+
+Requirements
+Python 3.x
+
+Flask
+
+Wikipedia
+
+Transformers
+
+FPDF
+
+python-docx
 
 
-When prompted, enter your name (for personalized PDF message).
-
-Enter a topic to summarize from Wikipedia.
-
-The program fetches, summarizes, and saves the summary as a PDF file named <topic>_Summary.pdf.
-
-
-Dependencies
-Make sure you have these Python packages installed:
-
-wikipedia
-
-transformers
-
-fpdf
-
-yfinance
-
-pandas
-
-numpy
-
-matplotlib
-
-scikit-learn
-
-tensorflow
-
-pip install wikipedia transformers fpdf yfinance pandas numpy matplotlib scikit-learn tensorflow
 
